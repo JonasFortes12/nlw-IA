@@ -13,5 +13,17 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0g
 Content-Disposition: form-data; name="file"; filename="music.mp3"
 Content-Type: audio/mpeg
 
-< ./music.mp3
+< ./audio.mp3
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+
+###
+
+# @name create-transcription
+
+POST  http://localhost:3333/videos/e7641778-c185-4bcf-9dde-02ce6aff41c0/transcription
+Content-Type: application/json
+
+{
+    "prompt": "Testador Desenvolvimento Programação Período"
+}
